@@ -104,4 +104,4 @@ Shown in the colab notebook
 
 ### 🎥 Video Output  
 🧍 Fall detected in video frame-by-frame  
-📷 [`output_2.jpg`](samples/output_2.jpg)
+📷 [`output_2.mp4`](samples/output_2.mp4)
