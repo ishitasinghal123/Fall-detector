@@ -64,7 +64,35 @@ Keypoint extraction and labeling logic is implemented inside the notebook.
 - Fall and Not Fall cases are highlighted visually.
 
 ---
+## 📊 Model Performance
 
+After training the Support Vector Machine (SVM) classifier on normalized YOLOv8 keypoints, here are the final results:
+
+### ✅ Best Hyperparameters (via GridSearchCV)
+
+```text
+Best Parameters:
+{
+  'svc__C': 2,
+  'svc__class_weight': 'balanced',
+  'svc__gamma': 'auto',
+  'svc__kernel': 'rbf'
+}
+Test Set Performance:
+              precision    recall  f1-score   support
+
+        Fall       0.94      0.91      0.92       244
+    Not Fall       0.92      0.95      0.94       282
+
+    accuracy                           0.93       526
+   macro avg       0.93      0.93      0.93       526
+weighted avg       0.93      0.93      0.93       526
+
+Train Accuracy: 97.86 %
+Test Accuracy: 93.16 %
+```
+
+---
 ## 📸 Sample Results
 
 ### 🖼️ Image Output  
