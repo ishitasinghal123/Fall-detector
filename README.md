@@ -65,21 +65,6 @@ Keypoint extraction and labeling logic is implemented inside the notebook.
 
 ---
 
-## 🧪 Run the Project in Colab
-
-1. Open the notebook:  
-   📓 [`fall_detection_colab.ipynb`](notebook/fall_detection_colab.ipynb)
-
-2. Run each cell step-by-step:
-   - Upload the dataset
-   - Load YOLOv8 pose model
-   - Train the SVM
-   - Run inference on new samples
-
-3. View output directly in Colab or download the results.
-
----
-
 ## 📸 Sample Results
 
 ### 🖼️ Image Output  
