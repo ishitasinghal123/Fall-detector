@@ -17,26 +17,21 @@ This repository presents a human **fall detection system** built using **YOLOv8 
 
 ## 📁 Repository Structure
 
+```text
 fall-detection-colab/
 ├── notebook/
-│ └── fall_detection_colab.ipynb ← Colab notebook (full pipeline)
-│
+│   └── fall_detection_colab.ipynb       ← Colab notebook (full pipeline)
 ├── models/
-│ └── fall_detector_classifier.pkl ← Trained SVM classifier
-│
+│   └── fall_detector_classifier.pkl      ← Trained SVM classifier
 ├── samples/
-│ ├── sample_input_1.mp4 ← Input test video
-│ ├── output_1.mp4 ← Video with fall prediction overlays
-│ ├── sample_input_2.jpg ← Input test video
-│ └── output_2.jpg ← Video with fall prediction overlays
-│
+│   ├── sample_input_1.mp4                ← Input test video
+│   ├── output_1.mp4                      ← Video with fall prediction overlays
+│   ├── sample_input_2.mp4                ← Input test video
+│   └── output_2.mp4                      ← Video with fall prediction overlays
 ├── dataset/
-│ └── README.md ← Instructions to download training dataset
-│
-├── requirements.txt ← Optional (dependencies)
-├── .gitignore
-└── README.md ← This file
-
+│   └── README.md                         ← Instructions to download training dataset
+└── README.md                             ← This file
+```
 
 ### 🏷️ Labeling Convention
 
@@ -45,7 +40,7 @@ fall-detection-colab/
 
 Keypoint extraction and labeling logic is implemented inside the notebook.
 
-👉 See [`dataset/README.md`](dataset/README.md) for details.
+👉 See [`dataset/README.md`](dataset/README.md) for details of dataset used for training the classifier.
 
 ---
 
@@ -65,7 +60,7 @@ Keypoint extraction and labeling logic is implemented inside the notebook.
 
 ### 🔹 4. Inference
 
-- Predictions are run on test images/videos.
+- Predictions are run on test images/videos using the trained classifier.
 - Fall and Not Fall cases are highlighted visually.
 
 ---
